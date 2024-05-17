@@ -1,0 +1,346 @@
+/* colors: 
+  6096B4
+  93BFCF
+  BDCDD6
+  EEE9DA
+
+
+*/
+@font-face {
+  font-family: "Title"; /* Descriptive name for your font */
+  src: url("public\assets\font\BemirsDemoVersionRegular-L360Z.ttf") format("truetype"),  /* TTF format */
+       url("public\assets\font\BemirsDemoVersionRegular-L360Z.otf") format("opentype");  /* OTF format (optional) */
+}
+
+
+header {
+  border-bottom: 3px solid rgba(52, 89, 230, 1);
+  
+}
+:root {
+  --bs-body-font-family: "Poppins", sans-serif;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+.error_message {
+  color: red;
+  font-size: 0.7rem;
+}
+.previewImage_table {
+  height: 80px;
+  width: 80px;
+}
+
+/* CAROUSEL / SLIDER */
+.carousel-item {
+  height: 35rem;
+  /* background-color: black; */
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-inner .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem;
+}
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.contact-section {
+  height: 100vh;
+  background-color: palegoldenrod;
+}
+
+.about-section {
+  height: 100vh;
+  background-color: brown;
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+}
+
+.profile-container {
+  background-color: red;
+}
+.header a {
+  text-decoration: none;
+}
+.footer a {
+  text-decoration: none;
+}
+
+.footer h5 {
+  font-weight: bold;
+}
+
+.profile-container {
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0),
+    0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-item {
+  height: 320px;
+  width: 250px;
+}
+.main-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.main-section .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+  color: #fff;
+}
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Default styles */
+.main-section h1 {
+  font-size: 7em;
+  font-family: "Title", sans-serif; /* Added a generic fallback */
+}
+
+.main-section p {
+  font-size: 1.5em;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 1000px) {
+  .main-section h1 {
+    font-size: 4em;
+  }
+
+  .main-section p {
+    font-size: 1em;
+  }
+  .quote-section .hide-image {
+    display: none !important;
+  }
+}
+
+.quote-section {
+  background-color: white; /* Background color of the quote section */
+  padding: 50px 0; /* Adjust padding as needed */
+  align-items: center;
+}
+
+.quote-section .a {
+  text-align: left; /* Center align the content */
+}
+.quote-section .b {
+  text-align: right; /* Center align the content */
+}
+
+.quote-section h3 {
+  font-size: 1.5em; 
+  font-style: italic;/* Adjust font size as needed */
+  color: rgba(52, 89, 230, 1); /* Text color */
+}
+
+.main {
+  /* Set scroll snap properties for the entire page */
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh; /* Optional: Set main container to viewport height */
+}
+
+#section1, #section2, #section3, #section4, #section5 {
+  /* Set snap points for each section */
+  scroll-snap-align: start;
+  /* Set sections to viewport height (optional) */
+  height: 100vh;
+}
+#section5 {
+  background-color: rgba(52, 89, 230, 1);
+}
+
+.About {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.main-about .content {
+  position: absolute;
+  top: 50%;
+  text-align: left;
+  color: #fff;
+}
+.info-about .content {
+  position: absolute;
+  text-align: left;
+  color: #fff;
+  margin-right: 5%;
+}
+.last .content {
+  position: absolute;
+  text-align: center; 
+  top: 40%;
+  font-style: italic;
+  color: #fff;
+  margin-right: 5%;
+}
+.About::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Default styles */
+.About h1 {
+  font-size: 7em;
+}
+
+.About h3 {
+  font-size: 3em;
+}
+
+.About p {
+  font-size: 1.5em;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 1000px) {
+  .About h1 {
+    font-size: 4em;
+  }
+
+  .About h3 {
+    font-size: 2em;
+  }
+
+  .About p {
+    font-size: 1em;
+  }
+}
+
+
+.checkbox-wrapper-2 .ikxBAC {
+  appearance: none;
+  background-color: #dfe1e4;
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 30px;
+}
+
+.checkbox-wrapper-2 .ikxBAC::before {
+  bottom: -6px;
+  content: "";
+  left: -6px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.checkbox-wrapper-2 .ikxBAC,
+.checkbox-wrapper-2 .ikxBAC::after {
+  transition: all 100ms ease-out;
+}
+
+.checkbox-wrapper-2 .ikxBAC::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.checkbox-wrapper-2 input[type=checkbox] {
+  cursor: default;
+}
+
+.checkbox-wrapper-2 .ikxBAC:hover {
+  background-color: #c9cbcd;
+  transition-duration: 0s;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked {
+  background-color:  rgba(52, 89, 230, 1);
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked::after {
+  background-color: #fff;
+  left: 13px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked:hover {
+  background-color: #535db3;
+}
+.single-product {
+  border: 2px solid rgb(183, 192, 227) !important;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.single-product .product-img {
+  overflow: hidden;
+}
+.single-product:hover .product-img img {
+  transform: scale(1.2); /* Adjust the scale value as needed */
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+.single-product .product-img img {
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+.login-panel {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border: 2px solid rgb(183, 192, 227) !important;
+  overflow: hidden;
+  border-radius: 20px !important;
+  position: absolute; /* Make the container positionable */
+  top: -100vh; /* Set initial position 100 viewport heights above the fold */
+  transition: top 1s ease-in-out; /* Define animation properties */
+  z-index: 0;
+}
+.login-panel.active {
+  top: 50vh;
+}
+.nav-link.active {
+  /* Font weight for bold */
+  font-weight: bold;
+  /* Color for the active link */
+  color: rgba(52, 89, 230, 1) !important ;
+}
