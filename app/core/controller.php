@@ -6,7 +6,6 @@ class Controller
     if (file_exists("./app/views/" . $view . ".php")) {
       include "./app/views/" . $view . ".php";
     } else {
-      include "./app/views/frontend/404.php";
     }
   }
 
